@@ -36,7 +36,7 @@ tag @a[tag=iso_flip] add iso_flop
 tag @a[tag=!iso_flip] remove iso_flop
 
 tag @a[tag=iso_off] add iso_flip
-tag @[tag=iso_off] remove iso_init
+tag @a[tag=iso_off] remove iso_init
 clear @a[tag=iso_off] isometric:flip
 clear @a[tag=iso_off] isometric:zoom
 camera @a[tag=iso_off] clear
