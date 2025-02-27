@@ -1,5 +1,6 @@
 # Isometric-Minecraft
 *A Minecraft add-on which allows the world to be seen without (much) depth.*
+-# Credit to [https://github.com/Blobicycake/Isometric-Minecraft](Blobicycake) for the original mod and its assets. The Resource Pack is unchanged, only the Behaviour Pack has changes.
 
 Automatically gives all players **isometric:flip** and **isometric:zoom**. Drop these items to change/freeze the camera angle and zoom.
 
