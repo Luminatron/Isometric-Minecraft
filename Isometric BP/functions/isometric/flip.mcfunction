@@ -1,6 +1,5 @@
-tag @p[r=3, tag=flip] add preflip
-tag @p[r=3, tag=!flip] add flip
-tag @p[r=3, tag=preflip] remove flip
-tag @a remove preflip
-give @p[r=3] isometric:flip 1
+tag @p[r=3, tag=iso_flip] add iso_preflip
+tag @p[r=3, tag=!iso_flip] add iso_flip
+tag @p[r=3, tag=iso_preflip] remove iso_flip
+tag @a remove iso_preflip
 kill
