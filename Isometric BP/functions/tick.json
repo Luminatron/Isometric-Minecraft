@@ -1,5 +1,6 @@
 {
     "values": [
-        "isometric/camera"
+        "isometric/camera",
+        "isometric/aimassist"
     ]
-  }
+}
