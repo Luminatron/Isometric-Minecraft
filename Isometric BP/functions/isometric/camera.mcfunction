@@ -1,5 +1,7 @@
-give @a[tag=!iso_off, tag=!iso_init] isometric:flip
-give @a[tag=!iso_off, tag=!iso_init] isometric:zoom
+give @a[tag=!iso_off, hasitem={item=isometric:flip,quantity=0}] isometric:flip
+clear @a[hasitem={item=isometric:flip,quantity=2..}] isometric:flip 0 1
+give @a[tag=!iso_off, hasitem={item=isometric:zoom,quantity=0}] isometric:zoom
+clear @a[hasitem={item=isometric:zoom,quantity=2..}] isometric:zoom 0 1
 give @a[tag=!iso_off, tag=!iso_init] compass
 tag @a[tag=!iso_off] add iso_init
 
