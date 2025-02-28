@@ -10,30 +10,31 @@ execute as @e[type=item,name=Zoom] at @e[type=item,name=Zoom] run function isome
 execute as @e[type=item,name=item.isometric:flip.name] at @e[type=item,name=item.isometric:flip.name] run function isometric/flip
 execute as @e[type=item,name=item.isometric:zoom.name] at @e[type=item,name=item.isometric:zoom.name] run function isometric/zoom
 
-execute as @a[tag=!iso_flip] at @a[tag=!iso_flip] anchored eyes run particle minecraft:balloon_gas_particle ^ ^ ^3
+execute as @a[tag=!iso_off] at @a[tag=!iso_off] anchored eyes run particle minecraft:balloon_gas_particle ^ ^ ^3
 
-execute as @a[tag=!iso_flip, tag=!iso_zoom, ry=-157.5] at @a[tag=!iso_flip, tag=!iso_zoom, ry=-157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~25 ~35 facing @s
-execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=-157.5, ry=-112.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=-157.5, ry=-112.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-25 ~25 ~25 facing @s
-execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=-112.5, ry=-67.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=-112.5, ry=-67.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-35 ~25 ~ facing @s
-execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=-67.5, ry=-22.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=-67.5, ry=-22.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-25 ~25 ~-25 facing @s
-execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=-22.5, ry=22.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=-22.5, ry=22.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~25 ~-35 facing @s
-execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=22.5, ry=67.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=22.5, ry=67.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~25 ~25 ~-25 facing @s
-execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=67.5, ry=112.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=67.5, ry=112.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~35 ~25 ~ facing @s
-execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=112.5, ry=157.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=112.5, ry=157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~25 ~25 ~25 facing @s
-execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=157.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~25 ~35 facing @s
+execute as @a[tag=!iso_flip, tag=!iso_zoom, ry=-157.5] at @a[tag=!iso_flip, tag=!iso_zoom, ry=-157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~20 ~28 facing @s
+execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=-157.5, ry=-112.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=-157.5, ry=-112.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-20 ~20 ~20 facing @s
+execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=-112.5, ry=-67.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=-112.5, ry=-67.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-28 ~20 ~ facing @s
+execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=-67.5, ry=-22.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=-67.5, ry=-22.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-20 ~20 ~-20 facing @s
+execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=-22.5, ry=22.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=-22.5, ry=22.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~20 ~-28 facing @s
+execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=22.5, ry=67.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=22.5, ry=67.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~20 ~20 ~-20 facing @s
+execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=67.5, ry=112.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=67.5, ry=112.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~28 ~20 ~ facing @s
+execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=112.5, ry=157.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=112.5, ry=157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~20 ~20 ~20 facing @s
+execute as @a[tag=!iso_flip, tag=!iso_zoom, rym=157.5] at @a[tag=!iso_flip, tag=!iso_zoom, rym=157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~20 ~28 facing @s
 
-execute as @a[tag=!iso_flip, tag=iso_zoom, ry=-157.5] at @a[tag=!iso_flip, tag=iso_zoom, ry=-157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~0.2 ~21 facing @s
-execute as @a[tag=!iso_flip, tag=iso_zoom, rym=-157.5, ry=-112.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=-157.5, ry=-112.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-15 ~7.5 ~15 facing @s
-execute as @a[tag=!iso_flip, tag=iso_zoom, rym=-112.5, ry=-67.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=-112.5, ry=-67.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-21 ~0.2 ~ facing @s
-execute as @a[tag=!iso_flip, tag=iso_zoom, rym=-67.5, ry=-22.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=-67.5, ry=-22.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-15 ~7.5 ~-15 facing @s
-execute as @a[tag=!iso_flip, tag=iso_zoom, rym=-22.5, ry=22.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=-22.5, ry=22.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~0.2 ~-21 facing @s
-execute as @a[tag=!iso_flip, tag=iso_zoom, rym=22.5, ry=67.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=22.5, ry=67.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~15 ~7.5 ~-15 facing @s
-execute as @a[tag=!iso_flip, tag=iso_zoom, rym=67.5, ry=112.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=67.5, ry=112.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~21 ~0.2 ~ facing @s
-execute as @a[tag=!iso_flip, tag=iso_zoom, rym=112.5, ry=157.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=112.5, ry=157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~15 ~7.5 ~15 facing @s
-execute as @a[tag=!iso_flip, tag=iso_zoom, rym=157.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~0.2 ~21 facing @s
+execute as @a[tag=!iso_flip, tag=iso_zoom, ry=-157.5] at @a[tag=!iso_flip, tag=iso_zoom, ry=-157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~ ~14 facing @s
+execute as @a[tag=!iso_flip, tag=iso_zoom, rym=-157.5, ry=-112.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=-157.5, ry=-112.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-10 ~5 ~10 facing @s
+execute as @a[tag=!iso_flip, tag=iso_zoom, rym=-112.5, ry=-67.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=-112.5, ry=-67.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-14 ~ ~ facing @s
+execute as @a[tag=!iso_flip, tag=iso_zoom, rym=-67.5, ry=-22.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=-67.5, ry=-22.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~-10 ~5 ~-10 facing @s
+execute as @a[tag=!iso_flip, tag=iso_zoom, rym=-22.5, ry=22.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=-22.5, ry=22.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~ ~-14 facing @s
+execute as @a[tag=!iso_flip, tag=iso_zoom, rym=22.5, ry=67.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=22.5, ry=67.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~10 ~5 ~-10 facing @s
+execute as @a[tag=!iso_flip, tag=iso_zoom, rym=67.5, ry=112.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=67.5, ry=112.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~14 ~ ~ facing @s
+execute as @a[tag=!iso_flip, tag=iso_zoom, rym=112.5, ry=157.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=112.5, ry=157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~10 ~5 ~10 facing @s
+execute as @a[tag=!iso_flip, tag=iso_zoom, rym=157.5] at @a[tag=!iso_flip, tag=iso_zoom, rym=157.5] anchored eyes run camera @s set minecraft:free ease 0.5 linear pos ~ ~ ~14 facing @s
 
-effect @a[tag=!iso_flip, tag=!iso_zoom] strength 1 1 true
-effect @a[tag=!iso_flip, tag=iso_zoom] strength 1 0 true
+effect @a[tag=!iso_off, tag=!iso_zoom] strength 1 1 true
+effect @a[tag=!iso_off, tag=iso_zoom] strength 1 0 true
+effect @a[tag=!iso_off] nightvision 1 0 true
 tag @a[tag=iso_flip] add iso_flop
 tag @a[tag=!iso_flip] remove iso_flop
 
