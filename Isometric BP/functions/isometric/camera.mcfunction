@@ -34,7 +34,6 @@ execute as @a[tag=!iso_flip, tag=iso_zoom, rym=157.5] at @a[tag=!iso_flip, tag=i
 
 effect @a[tag=!iso_off, tag=!iso_zoom] strength 1 1 true
 effect @a[tag=!iso_off, tag=iso_zoom] strength 1 0 true
-effect @a[tag=!iso_off] nightvision 1 0 true
 tag @a[tag=iso_flip] add iso_flop
 tag @a[tag=!iso_flip] remove iso_flop
 
